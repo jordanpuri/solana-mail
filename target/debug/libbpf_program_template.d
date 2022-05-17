@@ -1,0 +1,1 @@
+/home/informis77/code/solana-mail/target/debug/libbpf_program_template.so: /home/informis77/code/solana-mail/src/entrypoint.rs /home/informis77/code/solana-mail/src/error.rs /home/informis77/code/solana-mail/src/instruction.rs /home/informis77/code/solana-mail/src/lib.rs /home/informis77/code/solana-mail/src/processor.rs /home/informis77/code/solana-mail/src/state.rs

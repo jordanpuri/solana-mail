@@ -1,9 +1,14 @@
 // declare object models here
 // this is generally what is being written to / written from
 
-use borsh::{BorshDeserialize, BorshSerialize}; // can use serde?
+use borsh::{BorshDeserialize, BorshSerialize}; // can use serde
 
 #[derive(BorshDeserialize, BorshSerialize, Debug)]
+pub struct DataLength {
+    pub length: u32,
+}
+
+#[derive(BorshDeserialize, BorshSerialize, Debug, Clone)]
 pub struct Mail {
     pub id: String,
     pub from_address: String,
@@ -14,7 +19,7 @@ pub struct Mail {
 }
 
 // compose
-#[derive(BorshDeserialize, BorshSerialize, Debug)]
+#[derive(BorshDeserialize, BorshSerialize, Debug, Clone)]
 pub struct MailAccount {
     pub inbox: Vec<Mail>,
     pub sent: Vec<Mail>,
